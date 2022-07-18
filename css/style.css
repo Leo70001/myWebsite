@@ -10,10 +10,10 @@ html {
   font-size: 62.5%;
 }
 body {
+  color: var(--color-body);
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
-  color: var(--color-body);
 }
 h1,
 h2,
@@ -55,9 +55,9 @@ a {
 .link-arrow,
 .fa-solid {
   color: var(--color-accent);
-  text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .fa-solid {
   margin-left: 0px;
@@ -72,4 +72,33 @@ a {
   .fa-solid {
     font-size: 1.5rem;
   }
+}
+
+/*badges*/
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+.badge--primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+.badge--secondary {
+  background-color: var(--color-secondary);
+  color: #ffff;
+}
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+.badge{
+  font-size: 1.5rem;
+}
+.badge--small{
+  font-size: 1.2rem;
+}
 }
