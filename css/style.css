@@ -5,6 +5,7 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+/*Typography*/
 html {
   font-size: 62.5%;
 }
@@ -34,17 +35,41 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
-    body{
-        font-size: 1.8rem;
-    }
-    h1{
-        font-size: 8rem;
-    }
-    h2{
-        font-size: 4rem;
-    }
-    h3{
-      font-size: 2.4rem;
-    }
-    
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+/*Links*/
+a {
+  text-decoration: none;
+}
+.link-arrow,
+.fa-solid {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.fa-solid {
+  margin-left: 0px;
+  transition: margin 0.5s;
+}
+
+.link:hover .fa-solid {
+  margin-left: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .link-arrow,
+  .fa-solid {
+    font-size: 1.5rem;
+  }
 }
